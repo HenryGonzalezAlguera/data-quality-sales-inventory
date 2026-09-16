@@ -1,0 +1,59 @@
+﻿sucursal,producto_id,stock_sistema,stock_fisico,fecha_corte,responsable,diferencia_stock,estado_stock
+Heredia,P001,93,97,2026-06-30,Laura,4,Sobrante
+Heredia,P002,28,27,2026-06-30,Laura,-1,Faltante
+Heredia,P003,204,209,2026-06-30,Laura,5,Sobrante
+Heredia,P004,77,79,2026-06-30,Laura,2,Sobrante
+Heredia,P006,101,105,2026-06-30,Laura,4,Sobrante
+Heredia,P007,178,178,2026-06-30,Laura,0,Coincide
+Heredia,P008,85,81,2026-06-30,Laura,-4,Faltante
+Heredia,P009,82,78,2026-06-30,Laura,-4,Faltante
+Heredia,P010,63,65,2026-06-30,Laura,2,Sobrante
+Heredia,P011,50,45,2026-06-30,Laura,-5,Faltante
+Heredia,P012,144,142,2026-06-30,Laura,-2,Faltante
+Heredia,P013,124,120,2026-06-30,Laura,-4,Faltante
+Heredia,P014,68,67,2026-06-30,Laura,-1,Faltante
+Heredia,P015,178,177,2026-06-30,Laura,-1,Faltante
+Heredia,P016,144,144,2026-06-30,Laura,0,Coincide
+Heredia,P017,81,79,2026-06-30,Laura,-2,Faltante
+Heredia,P019,177,178,2026-06-30,Laura,1,Sobrante
+Heredia,P020,90,89,2026-06-30,Laura,-1,Faltante
+Alajuela,P001,95,97,2026-06-30,Miguel,2,Sobrante
+Alajuela,P002,194,190,2026-06-30,Miguel,-4,Faltante
+Alajuela,P003,115,110,2026-06-30,Miguel,-5,Faltante
+Alajuela,P004,124,121,2026-06-30,Miguel,-3,Faltante
+Alajuela,P005,97,97,2026-06-30,Miguel,0,Coincide
+Alajuela,P006,94,93,2026-06-30,Miguel,-1,Faltante
+Alajuela,P007,195,198,2026-06-30,Miguel,3,Sobrante
+Alajuela,P008,21,20,2026-06-30,Miguel,-1,Faltante
+Alajuela,P009,214,214,2026-06-30,Miguel,0,Coincide
+Alajuela,P010,67,68,2026-06-30,Miguel,1,Sobrante
+Alajuela,P011,53,48,2026-06-30,Miguel,-5,Faltante
+Alajuela,P012,165,165,2026-06-30,Miguel,0,Coincide
+Alajuela,P013,193,273,2026-06-30,Miguel,80,Sobrante
+Alajuela,P014,216,215,2026-06-30,Miguel,-1,Faltante
+Alajuela,P015,189,185,2026-06-30,Miguel,-4,Faltante
+Alajuela,P016,42,45,2026-06-30,Miguel,3,Sobrante
+Alajuela,P017,211,216,2026-06-30,Miguel,5,Sobrante
+Alajuela,P018,94,89,2026-06-30,Miguel,-5,Faltante
+Alajuela,P019,245,246,2026-06-30,Miguel,1,Sobrante
+Alajuela,P020,76,79,2026-06-30,Miguel,3,Sobrante
+San José,P001,227,225,2026-06-30,Sofía,-2,Faltante
+San José,P002,197,200,2026-06-30,Sofía,3,Sobrante
+San José,P003,135,136,2026-06-30,Sofía,1,Sobrante
+San José,P004,81,86,2026-06-30,Sofía,5,Sobrante
+San José,P005,246,251,2026-06-30,Sofía,5,Sobrante
+San José,P006,189,184,2026-06-30,Sofía,-5,Faltante
+San José,P007,104,103,2026-06-30,Sofía,-1,Faltante
+San José,P008,240,241,2026-06-30,Sofía,1,Sobrante
+San José,P009,143,139,2026-06-30,Sofía,-4,Faltante
+San José,P010,202,200,2026-06-30,Sofía,-2,Faltante
+San José,P011,41,46,2026-06-30,Sofía,5,Sobrante
+San José,P012,63,58,2026-06-30,Sofía,-5,Faltante
+San José,P013,37,36,2026-06-30,Sofía,-1,Faltante
+San José,P014,43,47,2026-06-30,Sofía,4,Sobrante
+San José,P015,137,135,2026-06-30,Sofía,-2,Faltante
+San José,P016,20,20,2026-06-30,Sofía,0,Coincide
+San José,P017,54,59,2026-06-30,Sofía,5,Sobrante
+San José,P018,86,86,2026-06-30,Sofía,0,Coincide
+San José,P019,24,20,2026-06-30,Sofía,-4,Faltante
+San José,P020,67,62,2026-06-30,Sofía,-5,Faltante

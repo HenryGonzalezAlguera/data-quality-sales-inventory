@@ -1,0 +1,22 @@
+﻿producto_id,nombre_producto,categoria,precio_estandar,activo
+P001,Piña dorada,Frutas,1250.0,True
+P002,Mango,Frutas,1100.0,True
+P003,Papaya,Frutas,950.0,True
+P004,Banano,Frutas,700.0,True
+P005,Sandía,Frutas,1800.0,True
+P006,,Frutas,1600.0,True
+P007,Tomate,Vegetales,1300.0,True
+P008,Chile dulce,Vegetales,1150.0,True
+P009,Cebolla,vegetales,900.0,True
+P010,Zanahoria,Vegetales,850.0,True
+P011,Frijoles,Granos,1550.0,True
+ P012 ,Arroz,Granos,1350.0,True
+P013,Lentejas,Granos,1450.0,True
+P014,Garbanzos,Granos,1650.0,True
+P015,Jugo de naranja,Bebidas,-500.0,True
+P016,Jugo de piña,Bebidas,1700.0,True
+P017,Agua de coco,Bebidas,1400.0,True
+P018,Té frío,Bebidas,1200.0,True
+P019,Pulpa de mango,Congelados,2200.0,True
+P020,Pulpa de fresa,Congelados,2350.0,True
+P005,Sandía,Frutas,1800.0,True
