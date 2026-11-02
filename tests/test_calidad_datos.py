@@ -93,10 +93,17 @@ def test_generador_sintetico_reproducible_sin_tocar_el_repositorio(tmp_path):
         tmp_path / "data/raw/inventario.xlsx",
     ]
 
-    def ejecutar_y_hashes():
+    def ejecutar_y_verificar():
         subprocess.run([sys.executable, str(scripts / "generar_datos.py")],
                        cwd=tmp_path, check=True, capture_output=True, text=True)
         assert all(x.is_file() for x in archivos)
-        return [hashlib.sha256(x.read_bytes()).hexdigest() for x in archivos]
+        # CSV: comparar bytes. XLSX: comparar datos, no metadatos ZIP
+        # (las marcas de tiempo internas pueden variar entre ejecuciones).
+        hashes = [hashlib.sha256(x.read_bytes()).hexdigest() for x in archivos[:2]]
+        excel = pd.read_excel(archivos[2], sheet_name="Inventario")
+        return hashes, excel
 
-    assert ejecutar_y_hashes() == ejecutar_y_hashes()
+    hashes1, excel1 = ejecutar_y_verificar()
+    hashes2, excel2 = ejecutar_y_verificar()
+    assert hashes1 == hashes2
+    pd.testing.assert_frame_equal(excel1, excel2)
