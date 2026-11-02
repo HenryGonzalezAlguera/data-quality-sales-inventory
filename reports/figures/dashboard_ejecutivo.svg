@@ -87,7 +87,7 @@
 <text x="840" y="810" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start">Faltante</text>
 <text x="1517" y="810" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="end">29</text>
 <rect x="1020" y="796" width="437" height="13" rx="6" fill="#293A50"/>
-<rect x="1020" y="796" width="219" height="13" rx="6" fill="#F3868B"/>
+<rect x="1020" y="796" width="218" height="13" rx="6" fill="#F3868B"/>
 <text x="840" y="864" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start">Coincide</text>
 <text x="1517" y="864" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="end">7</text>
 <rect x="1020" y="850" width="437" height="13" rx="6" fill="#293A50"/>
