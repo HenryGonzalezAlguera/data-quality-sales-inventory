@@ -15,6 +15,7 @@ El repositorio incluye un **validador de integridad** y pruebas con pytest para 
 ```powershell
 python -m pip install -r requirements-dev.txt
 python -m src.validar_entregables
+python -m src.informe_ejecutivo --verificar
 python -m pytest -q tests/
 ```
 
@@ -54,6 +55,23 @@ Para reconstruir únicamente el gráfico ejecutivo sin modificar las fuentes ori
 ```
 
 [Diseño, interpretación y pruebas del dashboard](docs/FASE3_DASHBOARD.md)
+
+## Informe ejecutivo y recomendaciones
+
+[Consultar informe de hallazgos, prioridades y plan de acción](docs/INFORME_EJECUTIVO.md)
+
+El informe se genera desde los CSV enriquecidos mediante
+[`src/informe_ejecutivo.py`](src/informe_ejecutivo.py).
+Distingue explícitamente **impacto absoluto** y **diferencia neta**, identifica
+las discrepancias individuales de mayor valor y propone acciones verificables.
+No atribuye pérdidas económicas ni causas no comprobadas.
+
+```powershell
+.\.venv\Scripts\python.exe -m src.informe_ejecutivo --verificar
+```
+
+Este comando verifica que el documento publicado coincide con los datos
+procesados; `python -m src.informe_ejecutivo` permite regenerarlo.
 
 ## Resultados principales
 
@@ -211,15 +229,18 @@ data-quality-sales-inventory/
 │   ├── generar_datos.py
 │   ├── procesamiento.py
 │   ├── dashboard_ejecutivo.py
+│   ├── informe_ejecutivo.py
 │   └── validar_entregables.py
 ├── tests/
 │   ├── test_calidad_datos.py
 │   ├── test_dashboard_ejecutivo.py
+│   ├── test_informe_ejecutivo.py
 │   └── test_pipeline_modular.py
 ├── docs/
 │   ├── FASE1_CALIDAD_Y_CI.md
 │   ├── FASE2_PIPELINE_MODULAR.md
-│   └── FASE3_DASHBOARD.md
+│   ├── FASE3_DASHBOARD.md
+│   └── INFORME_EJECUTIVO.md
 ├── .github/workflows/
 │   └── python-data-quality.yml
 ├── requirements-dev.txt

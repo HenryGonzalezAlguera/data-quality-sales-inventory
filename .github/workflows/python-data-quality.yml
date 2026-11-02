@@ -51,5 +51,8 @@ jobs:
       - name: Validar indicadores y calidad de entregables
         run: python -m src.validar_entregables
 
+      - name: Comprobar informe ejecutivo contra los CSV regenerados
+        run: python -m src.informe_ejecutivo --verificar
+
       - name: Ejecutar pruebas de regresión
         run: python -m pytest -q tests/
