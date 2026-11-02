@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="titulo descripcion">
+<title id="titulo">Dashboard ejecutivo: calidad de datos de ventas e inventario</title>
+<desc id="descripcion">Cuatro indicadores, ingresos por sucursal y categoría, impacto de inventario por sucursal y distribución de faltantes, coincidencias y sobrantes. Datos sintéticos.</desc>
+<rect width="1600" height="1030" fill="#0B1322"/>
+<rect x="48" y="42" width="8" height="48" rx="4" fill="#42D4A4"/>
+<text x="78" y="63" fill="#42D4A4" font-family="Arial, DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start">DATA QUALITY / SALES &amp; INVENTORY</text>
+<text x="48" y="121" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="40" font-weight="750" text-anchor="start">Visión ejecutiva de calidad de datos</text>
+<text x="48" y="157" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="400" text-anchor="start">Ventas analizadas y conciliación de inventario  ·  escenario sintético</text>
+<rect x="1334" y="61" width="218" height="46" rx="23" fill="#23374B"/>
+<text x="1443" y="92" fill="#42D4A4" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle">DATOS SINTÉTICOS</text>
+<rect x="48" y="197" width="358" height="145" rx="19" fill="#162337"/>
+<rect x="48" y="197" width="358" height="5" rx="2" fill="#42D4A4"/>
+<text x="71" y="238" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="start">VENTAS ANALIZADAS</text>
+<text x="71" y="293" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="40" font-weight="700" text-anchor="start">₡5.07 M</text>
+<text x="71" y="323" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="start">Importe de transacciones válidas</text>
+<rect x="430" y="197" width="358" height="145" rx="19" fill="#162337"/>
+<rect x="430" y="197" width="358" height="5" rx="2" fill="#6BAEFA"/>
+<text x="453" y="238" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="start">TRANSACCIONES</text>
+<text x="453" y="293" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="40" font-weight="700" text-anchor="start">491</text>
+<text x="453" y="323" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="start">Operaciones limpias</text>
+<rect x="812" y="197" width="358" height="145" rx="19" fill="#162337"/>
+<rect x="812" y="197" width="358" height="5" rx="2" fill="#F6B26B"/>
+<text x="835" y="238" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="start">CON DIFERENCIA</text>
+<text x="835" y="293" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="40" font-weight="700" text-anchor="start">51/58</text>
+<text x="835" y="323" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="start">87.9% de inventarios revisados</text>
+<rect x="1194" y="197" width="358" height="145" rx="19" fill="#162337"/>
+<rect x="1194" y="197" width="358" height="5" rx="2" fill="#EBA6F9"/>
+<text x="1217" y="238" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="start">IMPACTO ABSOLUTO</text>
+<text x="1217" y="293" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="40" font-weight="700" text-anchor="start">₡322.7 k</text>
+<text x="1217" y="323" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="start">Valor de desviaciones, no pérdida neta</text>
+<rect x="48" y="371" width="739" height="286" rx="19" fill="#162337"/>
+<text x="74" y="414" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" text-anchor="start">Ventas por sucursal</text>
+<text x="74" y="443" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">Participación de ingresos en las tres ubicaciones</text>
+<text x="75" y="478" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Heredia</text>
+<text x="756" y="478" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡1.73 M</text>
+<rect x="75" y="491" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="491" width="676" height="12" rx="6" fill="#42D4A4"/>
+<text x="75" y="544" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">San José</text>
+<text x="756" y="544" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡1.72 M</text>
+<rect x="75" y="557" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="557" width="672" height="12" rx="6" fill="#42D4A4"/>
+<text x="75" y="610" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Alajuela</text>
+<text x="756" y="610" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡1.61 M</text>
+<rect x="75" y="623" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="623" width="629" height="12" rx="6" fill="#42D4A4"/>
+<rect x="813" y="371" width="739" height="286" rx="19" fill="#162337"/>
+<text x="839" y="414" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" text-anchor="start">Impacto absoluto por sucursal</text>
+<text x="839" y="443" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">Diferencias valorizadas de stock; no equivale a pérdidas</text>
+<text x="840" y="478" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Alajuela</text>
+<text x="1521" y="478" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡179.6 k</text>
+<rect x="840" y="491" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="840" y="491" width="676" height="12" rx="6" fill="#F6B26B"/>
+<text x="840" y="544" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">San José</text>
+<text x="1521" y="544" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡87.9 k</text>
+<rect x="840" y="557" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="840" y="557" width="331" height="12" rx="6" fill="#F6B26B"/>
+<text x="840" y="610" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Heredia</text>
+<text x="1521" y="610" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡55.2 k</text>
+<rect x="840" y="623" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="840" y="623" width="208" height="12" rx="6" fill="#F6B26B"/>
+<rect x="48" y="679" width="739" height="291" rx="19" fill="#162337"/>
+<text x="74" y="722" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" text-anchor="start">Ventas por categoría</text>
+<text x="74" y="751" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">Clasificación por importe total de ventas</text>
+<text x="75" y="768" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Bebidas</text>
+<text x="756" y="768" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡1.26 M</text>
+<rect x="75" y="781" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="781" width="676" height="12" rx="6" fill="#6BAEFA"/>
+<text x="75" y="810" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Frutas</text>
+<text x="756" y="810" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡1.09 M</text>
+<rect x="75" y="823" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="823" width="588" height="12" rx="6" fill="#6BAEFA"/>
+<text x="75" y="852" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Granos</text>
+<text x="756" y="852" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡1.09 M</text>
+<rect x="75" y="865" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="865" width="585" height="12" rx="6" fill="#6BAEFA"/>
+<text x="75" y="894" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Congelados</text>
+<text x="756" y="894" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡859.0 k</text>
+<rect x="75" y="907" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="907" width="463" height="12" rx="6" fill="#6BAEFA"/>
+<text x="75" y="936" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">Vegetales</text>
+<text x="756" y="936" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="end">₡780.5 k</text>
+<rect x="75" y="949" width="676" height="12" rx="6" fill="#293A50"/>
+<rect x="75" y="949" width="420" height="12" rx="6" fill="#6BAEFA"/>
+<rect x="813" y="679" width="739" height="291" rx="19" fill="#162337"/>
+<text x="840" y="722" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" text-anchor="start">Conciliación del inventario</text>
+<text x="840" y="751" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">Cantidad de registros según el conteo físico</text>
+<text x="840" y="810" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start">Faltante</text>
+<text x="1517" y="810" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="end">29</text>
+<rect x="1020" y="796" width="437" height="13" rx="6" fill="#293A50"/>
+<rect x="1020" y="796" width="219" height="13" rx="6" fill="#F3868B"/>
+<text x="840" y="864" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start">Coincide</text>
+<text x="1517" y="864" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="end">7</text>
+<rect x="1020" y="850" width="437" height="13" rx="6" fill="#293A50"/>
+<rect x="1020" y="850" width="53" height="13" rx="6" fill="#42D4A4"/>
+<text x="840" y="918" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start">Sobrante</text>
+<text x="1517" y="918" fill="#F4F7FC" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="end">22</text>
+<rect x="1020" y="904" width="437" height="13" rx="6" fill="#293A50"/>
+<rect x="1020" y="904" width="166" height="13" rx="6" fill="#F6B26B"/>
+<text x="48" y="1009" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="start">Fuente: datos sintéticos del repositorio · cálculos desde CSV procesados · valores en CRC</text>
+<text x="1552" y="1009" fill="#A8B7CB" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="end">Python · pandas · calidad de datos</text>
+</svg>
