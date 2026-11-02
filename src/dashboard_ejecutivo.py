@@ -169,3 +169,27 @@ def guardar_dashboard(
     destino.parent.mkdir(parents=True, exist_ok=True)
     destino.write_text(generar_dashboard_svg(resumen), encoding="utf-8")
     return resumen
+
+
+def main() -> None:
+    """Actualiza únicamente el SVG ejecutivo desde los CSV enriquecidos."""
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--raiz", type=Path, default=Path(__file__).resolve().parents[1])
+    argumentos = parser.parse_args()
+    raiz = argumentos.raiz
+    ventas = pd.read_csv(raiz / "data/processed/ventas_analisis.csv", encoding="utf-8-sig")
+    inventario = pd.read_csv(
+        raiz / "data/processed/inventario_analisis.csv", encoding="utf-8-sig"
+    )
+    destino = raiz / "reports/figures/dashboard_ejecutivo.svg"
+    resumen = guardar_dashboard(ventas, inventario, destino)
+    print(
+        f"Dashboard ejecutivo actualizado: {destino} "
+        f"({resumen['transacciones']} ventas, {resumen['inventarios']} inventarios)"
+    )
+
+
+if __name__ == "__main__":
+    main()
