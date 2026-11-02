@@ -20,6 +20,9 @@ DOCUMENTOS = [
     RAIZ / "docs/GUIA_DEMO.md",
     RAIZ / "docs/PUBLICACION_LINKEDIN.md",
     RAIZ / "docs/INFORME_EJECUTIVO.md",
+    RAIZ / "docs/FASE1_CALIDAD_Y_CI.md",
+    RAIZ / "docs/FASE2_PIPELINE_MODULAR.md",
+    RAIZ / "docs/FASE3_DASHBOARD.md",
 ]
 
 
