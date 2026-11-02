@@ -1,8 +1,26 @@
 # Auditoría y conciliación de datos de ventas e inventario
 
+[![Python Data Quality CI](https://github.com/HenryGonzalezAlguera/data-quality-sales-inventory/actions/workflows/python-data-quality.yml/badge.svg?branch=main)](https://github.com/HenryGonzalezAlguera/data-quality-sales-inventory/actions/workflows/python-data-quality.yml)
+![Python 3.13](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
+
+
 Proyecto de análisis de datos desarrollado con Python, pandas, Excel y Power Query. Su objetivo es detectar problemas de calidad, limpiar información comercial y analizar diferencias entre el inventario registrado en el sistema y el conteo físico.
 
 Los datos son sintéticos y contienen errores intencionales para simular un escenario empresarial real.
+
+## Calidad verificable y reproducibilidad
+
+El repositorio incluye un **validador de integridad** y pruebas con pytest para comprobar referencias entre fuentes, duplicados, valores críticos, cálculos y concordancia con los KPI sintéticos publicados. GitHub Actions reconstruye las fuentes sintéticas, ejecuta el notebook y verifica el resultado antes de aceptar cambios.
+
+```powershell
+python -m pip install -r requirements-dev.txt
+python -m src.validar_entregables
+python -m pytest -q tests/
+```
+
+[Documentación de validación y CI](docs/FASE1_CALIDAD_Y_CI.md)
+
+**Precaución:** ejecutar `python src/generar_datos.py` **sobrescribe** los archivos sintéticos de `data/raw/`. Si los has personalizado, respáldalos antes. La generación y ejecución automatizada del notebook en GitHub Actions se realizan en un entorno efímero.
 
 ## Dashboard
 
@@ -160,7 +178,15 @@ data-quality-sales-inventory/
 │   │   └── dashboard_ventas_inventario.png
 │   └── reporte_analisis.xlsx
 ├── src/
-│   └── generar_datos.py
+│   ├── generar_datos.py
+│   └── validar_entregables.py
+├── tests/
+│   └── test_calidad_datos.py
+├── docs/
+│   └── FASE1_CALIDAD_Y_CI.md
+├── .github/workflows/
+│   └── python-data-quality.yml
+├── requirements-dev.txt
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -183,10 +209,12 @@ py -m venv .venv
 ### 3. Instalar las dependencias
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 ```
 
-### 4. Generar los datos sintéticos
+### 4. Generar los datos sintéticos (opcional si ya existen)
+
+**Atención: sobreescribe las fuentes existentes.** Si no necesitas regenerarlas, omite este paso.
 
 ```powershell
 python src/generar_datos.py
@@ -201,6 +229,15 @@ notebooks/01_auditoria_calidad_datos.ipynb
 ```
 
 Seleccionar el entorno `.venv` como kernel y ejecutar todas las celdas.
+
+### 6. Verificar resultados y pruebas
+
+```powershell
+python -m src.validar_entregables
+python -m pytest -q tests/
+```
+
+El verificador no modifica archivos. Los KPI exactos corresponden al dataset sintético con semilla 42.
 
 ## Archivos finales
 
