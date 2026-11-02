@@ -22,6 +22,18 @@ python -m pytest -q tests/
 
 **Precaución:** ejecutar `python src/generar_datos.py` **sobrescribe** los archivos sintéticos de `data/raw/`. Si los has personalizado, respáldalos antes. La generación y ejecución automatizada del notebook en GitHub Actions se realizan en un entorno efímero.
 
+## Pipeline modular de limpieza
+
+Las reglas de normalización y conciliación ya se implementan en
+[`src/procesamiento.py`](src/procesamiento.py), con funciones reutilizables
+que no alteran los DataFrames recibidos. El notebook las importa y continúa
+generando los mismos CSV, Excel y dashboard.
+
+El proyecto incluye **pruebas de equivalencia** frente a los archivos
+procesados publicados, además de las pruebas de integridad de la fase 1.
+
+[Documentación del pipeline y ejemplo de uso](docs/FASE2_PIPELINE_MODULAR.md)
+
 ## Dashboard
 
 ![Dashboard de ventas e inventario](reports/figures/dashboard_ventas_inventario.png)
@@ -179,11 +191,14 @@ data-quality-sales-inventory/
 │   └── reporte_analisis.xlsx
 ├── src/
 │   ├── generar_datos.py
+│   ├── procesamiento.py
 │   └── validar_entregables.py
 ├── tests/
-│   └── test_calidad_datos.py
+│   ├── test_calidad_datos.py
+│   └── test_pipeline_modular.py
 ├── docs/
-│   └── FASE1_CALIDAD_Y_CI.md
+│   ├── FASE1_CALIDAD_Y_CI.md
+│   └── FASE2_PIPELINE_MODULAR.md
 ├── .github/workflows/
 │   └── python-data-quality.yml
 ├── requirements-dev.txt
