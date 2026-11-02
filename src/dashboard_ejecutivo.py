@@ -113,9 +113,9 @@ def generar_dashboard_svg(resumen: dict) -> str:
         escribir(x + 26, y + 43, titulo, 25, texto, 700)
         escribir(x + 26, y + 72, nota, 16, secundario)
         maximo = max([valor for _, valor in valores], default=1) or 1
-        espacio = 53 if len(valores) > 3 else 66
+        espacio = 42 if len(valores) > 3 else 66
         for i, (etiqueta, valor) in enumerate(valores):
-            fila_y = y + 107 + i * espacio
+            fila_y = y + (89 if len(valores) > 3 else 107) + i * espacio
             escribir(x + 27, fila_y, etiqueta, 17, texto, 600)
             escribir(x + 708, fila_y, _moneda(valor) if moneda else str(round(valor)),
                      17, texto, 700, "end")
