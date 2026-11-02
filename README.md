@@ -34,9 +34,26 @@ procesados publicados, además de las pruebas de integridad de la fase 1.
 
 [Documentación del pipeline y ejemplo de uso](docs/FASE2_PIPELINE_MODULAR.md)
 
-## Dashboard
+## Dashboard ejecutivo
 
-![Dashboard de ventas e inventario](reports/figures/dashboard_ventas_inventario.png)
+![Dashboard ejecutivo de calidad de datos](reports/figures/dashboard_ejecutivo.svg)
+
+Este tablero ejecutivo es **vectorial (SVG)**, se genera directamente con Python a partir
+de los CSV procesados y está preparado para visualizarse en GitHub. Presenta los KPI
+principales, ventas por sucursal/categoría y conciliación de inventario. Los datos
+son **sintéticos** y el impacto absoluto representa desviaciones valorizadas,
+**no pérdidas netas comprobadas**.
+
+El [dashboard exploratorio original en PNG](reports/figures/dashboard_ventas_inventario.png)
+sigue disponible como referencia adicional, incluyendo la tendencia mensual.
+
+Para reconstruir únicamente el gráfico ejecutivo sin modificar las fuentes originales:
+
+```powershell
+.\.venv\Scripts\python.exe -m src.dashboard_ejecutivo
+```
+
+[Diseño, interpretación y pruebas del dashboard](docs/FASE3_DASHBOARD.md)
 
 ## Resultados principales
 
@@ -187,18 +204,22 @@ data-quality-sales-inventory/
 │   └── 01_auditoria_calidad_datos.ipynb
 ├── reports/
 │   ├── figures/
-│   │   └── dashboard_ventas_inventario.png
+│   │   ├── dashboard_ejecutivo.svg
+│   └── dashboard_ventas_inventario.png
 │   └── reporte_analisis.xlsx
 ├── src/
 │   ├── generar_datos.py
 │   ├── procesamiento.py
+│   ├── dashboard_ejecutivo.py
 │   └── validar_entregables.py
 ├── tests/
 │   ├── test_calidad_datos.py
+│   ├── test_dashboard_ejecutivo.py
 │   └── test_pipeline_modular.py
 ├── docs/
 │   ├── FASE1_CALIDAD_Y_CI.md
-│   └── FASE2_PIPELINE_MODULAR.md
+│   ├── FASE2_PIPELINE_MODULAR.md
+│   └── FASE3_DASHBOARD.md
 ├── .github/workflows/
 │   └── python-data-quality.yml
 ├── requirements-dev.txt
@@ -258,7 +279,8 @@ El verificador no modifica archivos. Los KPI exactos corresponden al dataset sin
 
 - `datos_procesados.xlsx`: datos limpios para Excel y Power Query.
 - `reporte_analisis.xlsx`: indicadores, rankings y tablas detalladas.
-- `dashboard_ventas_inventario.png`: resumen visual.
+- `dashboard_ejecutivo.svg`: tablero vectorial ejecutivo para GitHub.
+- `dashboard_ventas_inventario.png`: gráficos exploratorios originales.
 - `01_auditoria_calidad_datos.ipynb`: proceso completo y reproducible.
 
 ## Autor
