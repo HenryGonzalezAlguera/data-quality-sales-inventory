@@ -30,7 +30,7 @@ def analizar_hallazgos(ventas: pd.DataFrame, inventario: pd.DataFrame) -> dict:
     if not inventario_requerido.issubset(inventario.columns):
         raise ValueError("Inventario: columnas faltantes para el informe.")
 
-    fechas = pd.to_datetime(ventas["fecha"], errors="coerce")
+    fechas = pd.to_datetime(ventas["fecha"], format="%Y-%m-%d", errors="coerce")
     if fechas.isna().any():
         raise ValueError("Ventas: fechas inválidas.")
 

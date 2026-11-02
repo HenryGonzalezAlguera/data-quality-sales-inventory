@@ -40,4 +40,4 @@ Los **KPI exactos** son exclusivos del escenario sintético que incluye el repos
 python -m src.validar_entregables --sin-linea-base
 ```
 
-La validación de estructura y reglas no sustituye inspección estadística, pruebas contra casos reales ni la revisión de la lógica del notebook. Esta fase **no extrae todavía las transformaciones a funciones importables**: esa será una siguiente mejora para facilitar mantenimiento, parametrización y pruebas unitarias más finas.
+La validación de estructura y reglas no sustituye inspección estadística, pruebas contra casos reales ni la revisión de la lógica del notebook. **Evolución posterior:** la [fase 2](FASE2_PIPELINE_MODULAR.md) extrajo las transformaciones principales a funciones importables; las fases siguientes incorporaron [dashboard reproducible](FASE3_DASHBOARD.md), [informe ejecutivo](INFORME_EJECUTIVO.md) y [guía de demostración](GUIA_DEMO.md).
