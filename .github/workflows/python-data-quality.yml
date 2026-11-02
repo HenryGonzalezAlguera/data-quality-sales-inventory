@@ -45,6 +45,9 @@ jobs:
             --output /tmp/01_auditoria_calidad_datos_ejecutado.ipynb \
             --ExecutePreprocessor.timeout=300
 
+      - name: Verificar que dashboard ejecutivo publicado está actualizado
+        run: git diff --exit-code -- reports/figures/dashboard_ejecutivo.svg
+
       - name: Validar indicadores y calidad de entregables
         run: python -m src.validar_entregables
 
