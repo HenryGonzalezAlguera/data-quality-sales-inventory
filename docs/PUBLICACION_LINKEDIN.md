@@ -61,3 +61,25 @@ Repository: https://github.com/HenryGonzalezAlguera/data-quality-sales-inventory
 **Topics sugeridos:** `python`, `data-analysis`, `data-quality`, `pandas`, `jupyter-notebook`, `data-cleaning`, `inventory-management`, `data-visualization`, `pytest`, `github-actions`, `portfolio-project`.
 
 No afirmar que existe una aplicación pública en vivo, un archivo de Power BI, un dashboard interactivo o datos empresariales reales. Se recomienda vincular el repositorio y el dashboard auténtico, en lugar de simular capturas de una herramienta no existente.
+
+## Recursos visuales reales para adjuntar
+
+En este proyecto **ya existen imágenes producidas por el análisis**. Son preferibles a una infografía con indicadores inventados.
+
+| Prioridad | Archivo | Texto alternativo sugerido |
+| --- | --- | --- |
+| 1 | [Dashboard ejecutivo SVG](../reports/figures/dashboard_ejecutivo.svg) | Dashboard vectorial de ventas y discrepancias de inventario para tres sucursales; datos sintéticos |
+| 2 | [Gráficos de ventas e inventario PNG](../reports/figures/dashboard_ventas_inventario.png) | Gráficos de análisis exploratorio de transacciones y diferencias de inventario del caso de estudio sintético |
+
+**Para publicar en LinkedIn:** descargar el PNG del segundo enlace desde GitHub y adjuntarlo directamente. Si deseas utilizar el dashboard SVG, convertir una copia a PNG en una herramienta de diseño (por ejemplo, Canva), conservando exactamente los números y leyendas originales; el repositorio mantiene el SVG fuente reproducible.
+
+### Verificación antes de publicar
+
+- [ ] Confirmar que las cifras siguen siendo las del [informe ejecutivo](INFORME_EJECUTIVO.md): **491 transacciones válidas**, **51 de 58 registros** de inventario con diferencias y **₡322,700 de discrepancias absolutas valorizadas**.
+- [ ] Aclarar que los datos son **sintéticos** y que discrepancias de inventario **no equivalen** automáticamente a pérdidas financieras comprobadas.
+- [ ] Utilizar **una sola versión** del texto (inglés o español) en cada publicación.
+- [ ] Adjuntar los gráficos auténticos; no afirmar que hay un dashboard interactivo alojado o un informe Power BI publicado.
+- [ ] Añadir [enlace al repositorio](https://github.com/HenryGonzalezAlguera/data-quality-sales-inventory) y opcionalmente [dashboard](../reports/figures/dashboard_ejecutivo.svg).
+- [ ] Revisar imagen y accesibilidad; publicar manualmente desde LinkedIn.
+
+**Estado de automatización documentado:** el repositorio incluye [GitHub Actions para calidad de datos](../.github/workflows/python-data-quality.yml). El último resultado aprobado debe consultarse en Actions antes de comunicarlo públicamente; el contenido de este archivo no realiza una validación en vivo.
